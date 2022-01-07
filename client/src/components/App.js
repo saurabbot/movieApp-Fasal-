@@ -5,6 +5,8 @@ import Auth from "../hoc/auth";
 import LandingPage from "./views/LandingPage/LandingPage.js";
 import LoginPage from "./views/LoginPage/LoginPage.js";
 import RegisterPage from "./views/RegisterPage/RegisterPage.js";
+import MovieDetail from './views/DetailPage/DetailPage';
+import WatchlistPage from './views/watchlistPage/WatchlistPage';
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
+          <Route exact path="/movie/:movieId" component={Auth(MovieDetail, false)} />
+          <Route exact path="/favorite" component={Auth(WatchlistPage,null)} />
         </Switch>
       </div>
       <Footer />
