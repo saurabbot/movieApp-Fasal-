@@ -10,6 +10,9 @@ This project does not have a mongoDB connection setup. Setup the connection base
 
 ##_ISSUE
 1)The user state is not  being carried over to the movie Detail page so the add to watchlist with respect to every user is not happening.
+![image](https://user-images.githubusercontent.com/64374511/148546316-9f566aa1-3bb0-43e5-ada4-bb5d126f19eb.png)
+the user state is not being carried over here,tried for a while,but scince the timebound of the assignment couldnt fix that bug. 
+
 
 
 ## File structure
